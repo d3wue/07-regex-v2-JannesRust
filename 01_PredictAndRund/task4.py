@@ -1,7 +1,5 @@
 import re
 
-text = "This book on tennis cost $3.99 at Walmart."
-
 reg = re.compile("([A-Z][a-z]+) ([A-Z]*)( )?([A-Z][a-z]+)")
 m = reg.match("Hanna J Gruber")
 print(m)

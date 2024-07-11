@@ -1,6 +1,7 @@
 import re
 
-reg = re.compile("([A-Z][a-z]+) ([A-Z]*) ([A-Z][a-z]+)")
+reg = re.compile("([A-Z][a-z]+\. )*([A-Z][a-z]+) ([A-Z]+[a-z]*\.? ?)?([A-Z][a-z]+)?(,)?( [A-Z][a-z]+ [A-Z]*[a-z]+ [A-Z][a-z]+)?(,)?( [A-Z]+[a-z]*[A-Z]?)?(,)?( [A-Z]+[a-z]*[A-Z]?)?(,)?( [A-Z]+[a-z]*[A-Z]?)?(,)?( [A-Z]*[a-z]*[A-Z]?)?")
+                 
 
 m = reg.match("Uwe Meier")
 print(m)

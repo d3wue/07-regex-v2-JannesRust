@@ -1,6 +1,6 @@
 import re
 
-reg = re.compile("www.google.(de|com)")
+reg = re.compile("(([a-z]*)://)?(www\.)([a-z]+.)?([a-z]+)(-)?([a-z]+)?(.(com|de))(/)?([a-z]+/)?([a-z]+/)?")
 
 m = reg.match("www.google.com")
 print(m)
