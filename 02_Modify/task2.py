@@ -1,6 +1,6 @@
 import re
 
-reg = re.compile("([A-Z][a-z]+\. )*([A-Z][a-z]+) ([A-Z]+[a-z]*\.? ?)?([A-Z][a-z]+)?(,)?( [A-Z][a-z]+ [A-Z]*[a-z]+ [A-Z][a-z]+)?(,)?( [A-Z]+[a-z]*[A-Z]?)?(,)?( [A-Z]+[a-z]*[A-Z]?)?(,)?( [A-Z]+[a-z]*[A-Z]?)?(,)?( [A-Z]*[a-z]*[A-Z]?)?")
+reg = re.compile("(Prof\. |Dr\. )*([A-Z][a-z]+) ([A-Z\.a-z]*) ?([A-Z][a-z]+)(, (PhD|MSc|Duke of Manchester|KG|KT|PC|ADC))*")
                  
 
 m = reg.match("Uwe Meier")
